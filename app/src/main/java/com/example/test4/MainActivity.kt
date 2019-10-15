@@ -11,7 +11,6 @@ import android.widget.TextView
 class MainActivity : AppCompatActivity() {
     private var textView: TextView? = null
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -26,8 +25,8 @@ class MainActivity : AppCompatActivity() {
             override fun onClick(p0: View?) {
                 textView?.append(userInput.text)
                 textView?.append("\n")
-
-
+//                userInput.text.clear()
+                userInput.setText("")
             }
         })
 
