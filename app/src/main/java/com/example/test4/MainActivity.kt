@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         textView = findViewById<TextView>(R.id.textView)
         textView?.text = ""
         textView?.movementMethod = ScrollingMovementMethod()
+        userInput.setText("")
 
         button.setOnClickListener(object : View.OnClickListener {
             override fun onClick(p0: View?) {
